@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şanlı Sıhhi Tesisat - Profesyonel Su Tesisatçınız | Çorum</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* GENEL VE Z-INDEX AYARLARI */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: #343a40; }
+        
+        /* TAM SAYFA SABİT VİDEO STİLİ */
+        .video-background { position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; }
+
+        /* ÜST BAŞLIK ARKA PLAN RENK DEĞİŞİKLİĞİ (SİYAH) */
+        .header { 
+            background-color: rgba(0, 0, 0, 0.9); 
+            color: white; 
+            padding: 15px 20px 15px 10px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: relative; 
+            z-index: 10; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+        }
+        .logo a { 
+            text-decoration: none; 
+            color: white; 
+            display: flex; 
+            align-items: center;
+        }
+        .logo img {
+            height: 130px; 
+            width: auto;
+            vertical-align: middle;
+        }
+        
+        /* Navigasyon Linkleri */
+        .nav-menu a { color: white; text-decoration: none; margin-left: 20px; font-weight: 600; }
+
+        /* İLETİŞİM GRUBU STİLİ */
+        .contact-group { display: flex; align-items: center; gap: 15px; }
+        .contact-group a { 
+            color: white; 
+            text-decoration: none; 
+            font-size: 18px; 
+            padding: 5px 8px; 
+            border-radius: 4px; 
+            transition: background-color 0.3s; 
+        }
+        .contact-group a:hover { background-color: rgba(255, 255, 255, 0.2); }
+        
+        /* TELEFON BUTONU RENGİ (TURUNCU) */
+        .contact-group .phone { 
+            background-color: #FF8800; 
+            font-weight: bold; 
+            padding: 7px 12px; 
+        }
+        .contact-group .phone:hover { 
+            background-color: #CC6600; 
+        }
+
+        .contact-group i { 
+            font-size: 24px; 
+            vertical-align: middle; 
+        }
+
+
+        /* ŞEFFAF İÇERİK BÖLÜMLERİ STİLİ */
+        .hero-section { position: relative; padding: 120px 20px; text-align: center; color: white; min-height: 400px; z-index: 2; }
+        .services-section, .gallery-section { background-color: rgba(248, 249, 250, 0.85); z-index: 3; position: relative; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 50px 40px; max-width: 1200px; margin: 0 auto; }
+        .service-card { background: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); text-align: center; }
+        
+        /* GALERİ BAŞLIK ORTALAMA */
+        #galeri h2, #galeri p {
+            text-align: center;
+        }
+        /* Başlık üst boşluğu ve rengi */
+        #galeri h2 {
+            padding-top: 40px; 
+            color: #007bff;
+        }
+
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; max-width: 1300px; margin: 30px auto; }
+        
+        /* GALERİ RESİM STİLLERİ */
+        .gallery-item a { /* Tıklanabilir alanın düzgün görünmesi için */
+            display: block;
+            text-decoration: none;
+        }
+        .gallery-item img { 
+            width: 100%; 
+            height: 220px; 
+            object-fit: cover; 
+            border-radius: 5px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+            border: 3px solid #000000; 
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.03); 
+        }
+        .footer { background-color: rgba(52, 58, 64, 0.9); color: white; padding: 30px 40px; text-align: center; margin-top: 0; position: relative; z-index: 3; }
+    </style>
+</head>
+<body>
+
+    <video autoplay loop muted class="video-background">
+        <source src="arkaplan.mp4" type="video/webm">
+        <source src="tesisat-video.mp4" type="video/mp4"> 
+        Tarayıcınız video etiketini desteklemiyor.
+    </video>
+
+    <div class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="logo1.jpeg" alt="Şanlı Sıhhi Tesisat Logo">
+                <span style="font-size: 56px; font-weight: 700; margin-left: 10px;">Ş̲A̲N̲L̲I̲ ̲S̲I̲H̲H̲İ̲ ̲T̲E̲S̲İ̲S̲A̲T̲</span>
+            </a>
+        </div>
+        
+        <div class="nav-menu">
+            <a href="#hizmetler">Hizmetlerimiz</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#iletisim">İletişim</a>
+            
+            <div class="contact-group">
+                <a href="https://www.instagram.com/sanli_sihhi_tesisat/" target="_blank" title="Instagram Hesabımız">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/905418117204" target="_blank" title="WhatsApp Hattı">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Gülabibey+Bağcılar+Cad.+No+37%2FB,+Çorum" target="_blank" title="Konumumuz">
+                    <i class="fas fa-map-marker-alt"></i>
+                </a>
+                <a href="tel:05418117204" class="phone" title="Hemen Ara">
+                    <i class="fas fa-phone"></i> 0 541 811 72 04
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero-section">
+        </section>
+
+    <section id="hizmetler" class="services-section">
+        <h2 style="text-align: center; padding-top: 40px; color: #007bff;">Başlıca Hizmet Alanlarımız</h2>
+        
+        <div class="services-grid">
+            <div class="service-card"><h3>💧 Su Kaçağı Tespiti</h3><p>Kamera ve termal cihazlarla zemine zarar vermeden kaçak tespiti.</p></div>
+            <div class="service-card"><h3>🚫 Tıkanıklık Açma</h3><p>Tuvalet, lavabo, mutfak ve ana hat tıkanıklıklarını robotla açma.</p></div>
+            <div class="service-card"><h3>♨️ Kombi Petek Temizliği</h3><p>Özel kimyasallar ve makineyle peteklerin içindeki tortuyu temizleme.</p></div>
+            <div class="service-card"><h3>🚽 Klozet & Batarya Montajı</h3><p>Sıfırdan veya arızalı klozet/batarya montajı ve tamiri.</p></div>
+            <div class="service-card"><h3>🌡️ Yerden Isıtma Temizliği</h3><p>Yerden ısıtma sistemlerinin verimini artırmak için profesyonel temizlik.</p></div>
+            <div class="service-card"><h3>🛠️ Gider Tamiri ve Yenileme</h3><p>Eski ve arızalı pis su gider hatlarının yenilenmesi.</p></div>
+        </div>
+    </section>
+
+    <section id="galeri" class="gallery-section">
+        <h2>Yaptığımız İşler ve Referans Görsellerimiz</h2>
+        <p>Hizmet kalitemizi sunduğumuz başarılı projelerle görün.</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item"><a href="resim1.jpeg" target="_blank"><img src="resim1.jpeg" alt="Tesisat İşlemi 1"></a></div>
+            <div class="gallery-item"><a href="resim2.jpeg" target="_blank"><img src="resim2.jpeg" alt="Tesisat İşlemi 1"></a></div>
+            <div class="gallery-item"><a href="resim3.jpeg" target="_blank"><img src="resim3.jpeg" alt="Tesisat İşlemi 1"></a></div>
+            <div class="gallery-item"><a href="resim4.jpeg" target="_blank"><img src="resim4.jpeg" alt="Tesisat İşlemi 2"></a></div>
+            <div class="gallery-item"><a href="resim5.jpeg" target="_blank"><img src="resim5.jpeg" alt="Tesisat İşlemi 3"></a></div>
+            <div class="gallery-item"><a href="resim6.jpeg" target="_blank"><img src="resim6.jpeg" alt="Tesisat İşlemi 4"></a></div>
+            <div class="gallery-item"><a href="resim7.jpeg" target="_blank"><img src="resim7.jpeg" alt="Tesisat İşlemi 5"></a></div>
+            <div class="gallery-item"><a href="resim8.jpeg" target="_blank"><img src="resim8.jpeg" alt="Tesisat İşlemi 6"></a></div>
+            <div class="gallery-item"><a href="resim9.jpeg" target="_blank"><img src="resim9.jpeg" alt="Tesisat İşlemi 7"></a></div>
+            <div class="gallery-item"><a href="resim10.jpeg" target="_blank"><img src="resim10.jpeg" alt="Tesisat İşlemi 8"></a></div>
+            <div class="gallery-item"><a href="resim11.jpeg" target="_blank"><img src="resim11.jpeg" alt="Tesisat İşlemi 9"></a></div>
+            <div class="gallery-item"><a href="resim12.jpeg" target="_blank"><img src="resim12.jpeg" alt="Tesisat İşlemi 10"></a></div>
+            <div class="gallery-item"><a href="resim13.jpeg" target="_blank"><img src="resim13.jpeg" alt="Tesisat İşlemi 11"></a></div>
+            <div class="gallery-item"><a href="resim14.jpeg" target="_blank"><img src="resim14.jpeg" alt="Tesisat İşlemi 12"></a></div>
+            <div class="gallery-item"><a href="resim15.jpeg" target="_blank"><img src="resim15.jpeg" alt="Tesisat İşlemi 13"></a></div>
+            <div class="gallery-item"><a href="resim16.jpeg" target="_blank"><img src="resim16.jpeg" alt="Tesisat İşlemi 14"></a></div>
+            <div class="gallery-item"><a href="resim17.jpeg" target="_blank"><img src="resim17.jpeg" alt="Tesisat İşlemi 15"></a></div>
+            <div class="gallery-item"><a href="resim18.jpeg" target="_blank"><img src="resim18.jpeg" alt="Tesisat İşlemi 15"></a></div>
+            <div class="gallery-item"><a href="resim19.jpeg" target="_blank"><img src="resim19.jpeg" alt="Tesisat İşlemi 15"></a></div>
+            <div class="gallery-item"><a href="resim20.jpeg" target="_blank"><img src="resim20.jpeg" alt="Tesisat İşlemi 15"></a></div>
+            <div class="gallery-item"><a href="resim21.jpeg" target="_blank"><img src="resim21.jpeg" alt="Tesisat İşlemi 1"></a></div>
+            <div class="gallery-item"><a href="resim23.jpeg" target="_blank"><img src="resim23.jpeg" alt="Tesisat İşlemi 1"></a></div>
+            <div class="gallery-item"><a href="resim24.jpeg" target="_blank"><img src="resim24.jpeg" alt="Tesisat İşlemi 1"></a></div>
+            <div class="gallery-item"><a href="resim25.jpeg" target="_blank"><img src="resim25.jpeg" alt="Tesisat İşlemi 1"></a></div>
+            
+        </div>
+       
+
+    <footer id="iletisim" class="footer">
+        <h3>Şanlı Sıhhi Tesisat - Güvenilir Çözümler</h3>
+        <p>Adres: **Gülabibey Bağcılar Cad. No 37/B, Çorum**</p>
+        <p>Telefon: <a href="tel:05418117204">**0 541 811 72 04**</a> | E-Posta: <a href="mailto:info@sanlitesisat.com">info@sanlitesisat.com</a></p>
+        <p>Tüm Hakları Saklıdır © 2025 Şanlı Sıhhi Tesisat</p>
+    </footer>
+
+</body>
+</html>
